@@ -61,7 +61,7 @@ function JokeList({ numJokesToGet }) {
   function vote(id, delta) {
     const updatedJokes = jokes.map(j =>
       j.id === id ? { ...j, votes: j.votes + delta } : j)
-    const sortedJokes = [...updatedJokes].sort((a, b) => b.votes - a.votes);
+    const sortedJokes = updatedJokes.sort((a, b) => b.votes - a.votes);
     setJokes(jokes => (sortedJokes));
   }
 
