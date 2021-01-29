@@ -9,7 +9,7 @@ import './Joke.css';
  * JokeList -> Joke
 */
 
-function Joke({ id, vote, votes, text }) {
+function Joke({ id, vote, votes, text, lock}) {
 	return (
 		<div className="Joke">
 			<div className="Joke-votearea">
@@ -19,6 +19,10 @@ function Joke({ id, vote, votes, text }) {
 
 				<button onClick={(evt) => vote(id, -1)}>
 					<i className="fas fa-thumbs-down" />
+				</button>
+
+				<button onClick={(evt) => lock}>
+				<i className="fas fa-lock"></i>
 				</button>
 
 				{votes}

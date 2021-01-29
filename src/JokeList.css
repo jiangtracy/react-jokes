@@ -6,7 +6,7 @@
   color: tomato;
 }
 
-.JokeList-getmore {
+.JokeList-getmore, .JokeList-reset {
   margin: 1em 0;
   font-size: 150%;
   border-radius: 0.5em;
