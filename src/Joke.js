@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Joke.css';
 
 /** Render a single joke, along with vote up/down buttons. 
